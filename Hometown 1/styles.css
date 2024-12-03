@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header.hero {
+    background-image: url('images/fountan.jpg');
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+.navbar {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    background: #666867;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    text-align: center;
+    background: #f5f2f2;
+    background-image: url('images/pergamen2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+.section:nth-child(even) {
+    background: #fff;
+}
+
+
+/* Attractions section */
+#attractions {
+    background-image: url('images/trevi.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    color: #333;
+    position:relative;
+}
+
+/* Content layout */
+.attractions-content {
+    display: flex;
+    flex-direction: row; /* Align elements side by side */
+    gap: 20px; /* Space between columns */
+}
+
+/* Left column: Single Image */
+.left-column {
+    display: flex;
+    flex-direction: column; /* Stack single image vertically */
+    gap: 20px;
+    align-items: flex-start; /* Align items to the left */
+    flex-basis: 30%; /* Left column takes 30% width */
+    position: relative;
+}
+
+.images, .attractions-content {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Single image */
+.single-img {
+    width: 500px; /* Default size */ 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 6px 10px rgba(22, 21, 21, 0.1); 
+    margin-top: 20px;
+    cursor: pointer; /* Indicate it's clickable */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.single-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+/* Right column: Text */
+.right-column {
+    flex-basis: 60%; /* Right column takes 60% width */
+    text-align: left;
+    line-height: 1.8;
+    font-size: 18px;
+    display: flex;
+    align-items: center; /* Vertically center the text */
+}
+
+
+/* Section styles */
+#cuisine {
+    text-align: center;
+    background: url("images/pasta.jpg");
+    background: cover;
+    color: #070707;
+    padding: 40px 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Carousel Section */
+#carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+#carousel {
+    width: 80%;
+    height: auto;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.carousel-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.carousel-button:hover {
+    background-color: #555;
+}
+
+
+
+/* Cuisine item styles */
+.cuisine-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px; /* Centers content with a maximum width */
+    border-bottom: 3px solid #201d1de1; 
+    padding-bottom: 20px;
+}
+
+
+/* Image styles */
+.cuisine-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Text styles */
+.cuisine-item p {
+    max-width: 600px;
+    font-size: 18px;
+    text-align: left;
+    color:#070707;
+    font-weight: bold;
+}
+
+/* Gallery Section */
+.gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+   
+}
